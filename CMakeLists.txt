@@ -3,7 +3,7 @@ project(opencv_tracker)
 
 set(CMAKE_CXX_STANDARD 11)
 
-find_package(OpenCV 3.4.2 REQUIRED)
+find_package(OpenCV 3 REQUIRED)
 add_library(opencv INTERFACE)
 target_include_directories(opencv INTERFACE ${OpenCV_INCLUDE_DIRS})
 target_link_libraries(opencv INTERFACE ${OpenCV_LIBS})
